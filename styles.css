@@ -79,6 +79,26 @@ nav{
     background-color: #A96483;
 }
 
+i{
+    font-size: 10em;
+    color: #ffcc66;
+    padding: 20px;
+}
+
+#process .card{
+    display: flex;
+    align-items: center;
+}
+
+.card .description{
+    height: 100px;
+    width: 200px;
+}
+
+#process .container1{
+    display: flex;
+}
+
 /* ------ PREVIEW/DISPLAY ----- */
 #preview{
     background-color: #BF7267;
@@ -86,7 +106,7 @@ nav{
 
 /* ----- ABOUT & TEAM ----- */
 
-.container{
+.container2{
     background-color: #B067BF;
 }
 
