@@ -1,20 +1,42 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Ranchers&display=swap');
 
+:root{
+    --orange: rgb(212, 145, 94);
+    --oliveGreen: rgb(140, 179, 105);
+    --eggplant: rgb(83, 59, 77);
+    --khakiGreen: rgb(76, 80, 63);
+    --lilac: rgb(101, 126, 212); 
+    --mutedBlue: rgb(96, 117, 172);
+    --yellow: #ffcc66;
+    --mauve: #A96483;
+}
+
 *{
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
 
-button{ 
-    background-color: #ffcc66;
+button.primary{ 
+    background-color:var(--oliveGreen);
     padding: 15px;
     border-radius: 15px;
     text-transform: uppercase;
     font-size: 16px;
     font-weight: bold;
+    margin: 5px;
 }
+
+button.secondary{
+    background-color:var(--mutedBlue);
+    padding: 15px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px;
+} 
 
 button:hover{
     cursor: pointer;
@@ -32,7 +54,7 @@ a:hover{
 
 /* ------ NAVBAR ----- */
 nav{
-    background-color: #BF7267;
+    background-color: var(--orange);
 }
 
 /* ------ HERO/MISSION STATEMENT ----- */
@@ -48,23 +70,25 @@ nav{
 
 .title{
     font-family: 'Ranchers', cursive; 
-    letter-spacing: 0.3em;
-    color: #ffcc66;
+    letter-spacing: 0.2em;
+    color: var(--orange);
     font-size: 64px;
-    text-shadow: 2px 2px #664400;
+    text-shadow: 2px 2px #EAC8AE;
+    padding: 5px;
     /* text-align: center; */
 }
 
 .lead{
-    color: #291603;
+    color: #EAC8AE;
     font-size: 32px;
     font-weight: 700;
     text-align: center;
     text-shadow: 1px 1px #75623d;
+    padding: 5px;
 }
 
 .mission{
-    background-color: rgb(223, 199, 185, 0.3);
+    background-color: rgb(76, 80, 63, 0.6);
     width: 600px;
     padding: 30px;
     border-radius: 10px;
@@ -76,12 +100,12 @@ nav{
 
 /* ------ THE PROCESS/HOW IT WORKS ------*/
 #process{
-    background-color: #A96483;
+    background-color: var(--oliveGreen);
 }
 
 i{
     font-size: 10em;
-    color: #ffcc66;
+    color: var(--khakiGreen);
     padding: 20px;
 }
 
@@ -101,17 +125,23 @@ i{
 
 /* ------ PREVIEW/DISPLAY ----- */
 #preview{
-    background-color: #BF7267;
+    background-color: var(--eggplant);
+}
+
+#preview h2{
+    text-align: center;
+    font-size: 52px;
+    color: #EAC8AE;
 }
 
 /* ----- ABOUT & TEAM ----- */
 
 .container2{
-    background-color: #B067BF;
+    background-color: var(--mutedBlue);
 }
 
 /* ----- FOOTER ----- */
 
 footer{
-    background-color: #BF7267;
+    background-color: var(--orange);
 }
