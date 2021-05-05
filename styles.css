@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Ranchers&display=swap');
 
+/* --------- GLOBAL -------- */
 :root{
     --orange: rgb(212, 145, 94);
     --oliveGreen: rgb(147, 197, 103);
@@ -35,15 +36,17 @@ button.secondary{
     background-color: transparent;
     /* padding: 15px; */
     border-radius: 50px;
-    border: 3px solid var(--eggplant);
+    border: 5px solid var(--eggplant);
     color: rgb(59, 45, 56);
     text-transform: uppercase;
     font-size: 16px;
     font-weight: bold;
     margin: 10px;
-    height: 3rem;
-    width: 10rem;
+    padding: 10px;
+    height: 4rem;
+    width: 11rem;
     text-align: center;
+    
 } 
 
 button:hover{
@@ -52,7 +55,7 @@ button:hover{
 }
 
 button.primary:hover{
-    border: 3px solid rgb(31, 30, 26);
+    border: 4px solid rgb(31, 30, 26);
 }
 
 button.secondary:hover{
@@ -69,6 +72,16 @@ a:hover{
     
 }
 
+h2{
+    text-align: center;
+    font-family: 'Ranchers', cursive; 
+    font-size: 48px;
+    letter-spacing: 0.1em; 
+}
+
+ul{
+    list-style: none;
+}
 /* ------ NAVBAR ----- */
 nav{
     background-color: var(--orange);
@@ -167,6 +180,10 @@ nav ul li:active{
     background-color: var(--oliveGreen);
 }
 
+#process h2{
+    color: rgb(212, 145, 94);
+}
+
 i{
     font-size: 10em;
     color: var(--khakiGreen);
@@ -189,19 +206,43 @@ i{
 
 /* ------ PREVIEW/DISPLAY ----- */
 #preview{
-    background-color: var(--eggplant);
+    background-color: var(--yellow);
 }
 
 #preview h2{
-    text-align: center;
-    font-size: 52px;
-    color: #EAC8AE;
+    color: var(--eggplant); 
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.cards-item{
+    display: flex;
+    padding: 1rem;
+}
+
+#preview .card{
+    background-color: white;
+}
+
+.card-image img{
+    height: auto;
+    max-width: 100%;
 }
 
 /* ----- ABOUT & TEAM ----- */
 
 .container2{
-    background-color: var(--mutedBlue);
+    background-color: var(--eggplant);
+}
+
+.container2 h2{
+    color: var(--oliveGreen);
 }
 
 /* ----- FOOTER ----- */
